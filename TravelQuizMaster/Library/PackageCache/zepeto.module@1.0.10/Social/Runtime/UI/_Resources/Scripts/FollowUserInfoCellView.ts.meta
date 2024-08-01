@@ -1,0 +1,92 @@
+fileFormatVersion: 2
+guid: 9df922c1778714542ab78e76352b5433
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: "{\"source\":\"\\\"use strict\\\";\\r\\nObject.defineProperty(exports,
+    \\\"__esModule\\\", { value: true });\\r\\nconst __UnityEngine__ = require(\\\"UnityEngine\\\");\\r\\nconst
+    ZEPETO_Script_1 = require(\\\"ZEPETO.Script\\\");\\r\\nconst ZEPETO_Module_Social_1
+    = require(\\\"ZEPETO.Module.Social\\\");\\r\\nconst UnityEngine_UI_1 = require(\\\"UnityEngine.UI\\\");\\r\\nconst
+    UnityEngine = require(\\\"UnityEngine\\\");\\r\\nconst UnityEngine_1 = require(\\\"UnityEngine\\\");\\r\\nconst
+    System = require(\\\"System\\\");\\r\\nclass FollowUserInfoCellView extends ZEPETO_Script_1.ZepetoScriptBehaviour
+    {\\r\\n    Awake() {\\r\\n        const userInfoCellView = this.GetComponent($typeof(ZEPETO_Module_Social_1.UserInfoCellView));\\r\\n       
+    if (null === userInfoCellView)\\r\\n            return;\\r\\n        userInfoCellView.onActivated.AddListener(()
+    => this.SetUI(userInfoCellView, () => this.AlphaTween(this.viewProfile, 0, 1,
+    0.3)));\\r\\n        userInfoCellView.onDeactivated.AddListener(() => {\\r\\n           
+    if (this._coDownloadProfile != null) {\\r\\n                this.StopCoroutine(this._coDownloadProfile);\\r\\n               
+    this._coDownloadProfile = null;\\r\\n            }\\r\\n            if (this._coAlphaTween
+    != null) {\\r\\n                this.StopCoroutine(this._coAlphaTween);\\r\\n               
+    this._coAlphaTween = null;\\r\\n            }\\r\\n            let color = this.viewProfile.color;\\r\\n           
+    color.a = 1;\\r\\n            this.viewProfile.color = color;\\r\\n           
+    this.viewProfile.texture = null;\\r\\n        });\\r\\n    }\\r\\n    Start()
+    {\\r\\n        const userInfoCellView = this.GetComponent($typeof(ZEPETO_Module_Social_1.UserInfoCellView));\\r\\n       
+    if (null === userInfoCellView)\\r\\n            return;\\r\\n        this.viewFollow.GetComponentInChildren($typeof(UnityEngine_UI_1.Text)).text
+    = userInfoCellView.textFollowButton;\\r\\n        this.viewFollowing.GetComponentInChildren($typeof(UnityEngine_UI_1.Text)).text
+    = userInfoCellView.textFollowingButton;\\r\\n    }\\r\\n    SetUI(userInfoCellView,
+    callback) {\\r\\n        const userInfo = userInfoCellView.userInfo;\\r\\n       
+    if (userInfo === null)\\r\\n            return;\\r\\n        this.viewName.text
+    = userInfoCellView.textName;\\r\\n        this.viewProfile.GetComponent($typeof(__UnityEngine__.RectTransform)).sizeDelta
+    = new UnityEngine.Vector2(userInfoCellView.cellHeight, userInfoCellView.cellHeight);\\r\\n       
+    this.btnFollow.userId = userInfo.userId;\\r\\n        this.btnFollow.isFollowing
+    = userInfo.followStatus.isFollowing;\\r\\n        // Data\uB97C \uD3EC\uD568\uD558\uC5EC
+    UI \uAE4C\uC9C0 \uD568\uAED8 Set\uD560 \uACBD\uC6B0 \uC0AC\uC6A9\\r\\n       
+    // this.btnFollow.SetStatusAsync(userInfo.userId);\\r\\n        // Follow ClickAction
+    UI Initialize\\r\\n        this.viewFollowing.SetActive(userInfo.followStatus.isFollowing);\\r\\n       
+    this.viewFollow.SetActive(false === userInfo.followStatus.isFollowing);\\r\\n       
+    //Follow ClickAction UI Refreshing\\r\\n        this.btnFollow.add_onChangedState((userId,
+    isFollowing) => {\\r\\n            this.viewFollowing.SetActive(isFollowing);\\r\\n           
+    this.viewFollow.SetActive(false === isFollowing);\\r\\n        });\\r\\n       
+    this.DownloadBadgeAsync(userInfo);\\r\\n        this.DownloadProfileThumbnailAsync(userInfo,
+    callback);\\r\\n    }\\r\\n    DownloadProfileThumbnailAsync(userInfo, callback
+    = null) {\\r\\n        if (this._coDownloadProfile) {\\r\\n            this.StopCoroutine(this._coDownloadProfile);\\r\\n           
+    this._coDownloadProfile = null;\\r\\n        }\\r\\n        this._coDownloadProfile
+    = this.StartCoroutine(this.coDownloadProfileThumbnail(userInfo, callback));\\r\\n   
+    }\\r\\n    DownloadBadgeAsync(userInfo) {\\r\\n        if (this._coDownloadProfile)
+    {\\r\\n            this.StopCoroutine(this._coDownloadProfile);\\r\\n           
+    this._coDownloadProfile = null;\\r\\n        }\\r\\n        this._coDownloadBadge
+    = this.StartCoroutine(this.coDownloadBadge(userInfo));\\r\\n    }\\r\\n    AlphaTween(imgTarget,
+    srcValue, dstValue, duration, callback = null) {\\r\\n        if (this._coAlphaTween)
+    {\\r\\n            this.StopCoroutine(this._coAlphaTween);\\r\\n            this._coAlphaTween
+    = null;\\r\\n        }\\r\\n        this._coAlphaTween = this.StartCoroutine(this.coAlphaTween(imgTarget,
+    srcValue, dstValue, duration, callback));\\r\\n    }\\r\\n    *coDownloadProfileThumbnail(userInfo,
+    callback = null) {\\r\\n        const request = userInfo.GetProfileThumbnailAsync();\\r\\n       
+    yield new UnityEngine.WaitUntil(() => false == request.keepWaiting);\\r\\n       
+    if (request.responseData.isSuccess) {\\r\\n            this.viewProfile.texture
+    = request.responseData.texture;\\r\\n        }\\r\\n        if (null !== callback)\\r\\n           
+    callback();\\r\\n        this._coDownloadProfile = null;\\r\\n    }\\r\\n   
+    *coDownloadBadge(userInfo) {\\r\\n        const request = userInfo.GetBadgeImageAsync();\\r\\n       
+    if (null == request) {\\r\\n            this.viewBadge.gameObject.SetActive(false);\\r\\n           
+    return;\\r\\n        }\\r\\n        yield new UnityEngine.WaitUntil(() => false
+    == request.keepWaiting);\\r\\n        if (request.responseData.isSuccess && null
+    != request.responseData.texture) {\\r\\n            this.viewBadge.texture =
+    request.responseData.texture;\\r\\n            this.viewBadge.gameObject.SetActive(true);\\r\\n       
+    }\\r\\n        else {\\r\\n            this.viewBadge.gameObject.SetActive(false);\\r\\n       
+    }\\r\\n        this._coDownloadBadge = null;\\r\\n    }\\r\\n    *coAlphaTween(imgTarget,
+    srcValue, dstValue, duration, callback = null) {\\r\\n        let color = imgTarget.color;\\r\\n       
+    color.a = srcValue;\\r\\n        imgTarget.color = color;\\r\\n        let startTime
+    = UnityEngine_1.Time.time;\\r\\n        while (true) {\\r\\n            let time
+    = UnityEngine_1.Mathf.Clamp01((UnityEngine_1.Time.time - startTime) / duration);\\r\\n           
+    color.a = UnityEngine_1.Mathf.Lerp(srcValue, dstValue, time);\\r\\n           
+    imgTarget.color = color;\\r\\n            if (time >= 1) {\\r\\n               
+    break;\\r\\n            }\\r\\n            yield new UnityEngine_1.WaitForEndOfFrame();\\r\\n       
+    }\\r\\n        color.a = dstValue;\\r\\n        imgTarget.color = color;\\r\\n       
+    if (null !== callback)\\r\\n            callback();\\r\\n        this._coAlphaTween
+    = null;\\r\\n    }\\r\\n}\\r\\nexports.default = FollowUserInfoCellView;\\r\\n//#
+    sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRm9sbG93VXNlckluZm9DZWxsVmlldy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIkZvbGxvd1VzZXJJbmZvQ2VsbFZpZXcudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsaURBQW1EO0FBQ25ELCtEQUs2QjtBQUM3QixtREFBNkM7QUFDN0MsMkNBQTBDO0FBQzFDLDZDQUFzRTtBQUN0RSxpQ0FBaUM7QUFHakMsTUFBcUIsc0JBQXVCLFNBQVEscUNBQXFCO0lBZ0JyRSxLQUFLO1FBRUQsTUFBTSxnQkFBZ0IsR0FBRyxJQUFJLENBQUMsWUFBWSxTQUFDLHVDQUFnQixFQUFHLENBQUM7UUFFL0QsSUFBSSxJQUFJLEtBQUssZ0JBQWdCO1lBQUUsT0FBTztRQUV0QyxnQkFBZ0IsQ0FBQyxXQUFXLENBQUMsV0FBVyxDQUFDLEdBQUcsRUFBRSxDQUMxQyxJQUFJLENBQUMsS0FBSyxDQUFDLGdCQUFnQixFQUFFLEdBQUcsRUFBRSxDQUFDLElBQUksQ0FBQyxVQUFVLENBQUMsSUFBSSxDQUFDLFdBQVcsRUFBRSxDQUFDLEVBQUUsQ0FBQyxFQUFFLEdBQUcsQ0FBQyxDQUFDLENBQUMsQ0FBQztRQUV0RixnQkFBZ0IsQ0FBQyxhQUFhLENBQUMsV0FBVyxDQUFDLEdBQUcsRUFBRTtZQUU1QyxJQUFJLElBQUksQ0FBQyxrQkFBa0IsSUFBSSxJQUFJLEVBQUU7Z0JBQ2pDLElBQUksQ0FBQyxhQUFhLENBQUMsSUFBSSxDQUFDLGtCQUFrQixDQUFDLENBQUM7Z0JBQzVDLElBQUksQ0FBQyxrQkFBa0IsR0FBRyxJQUFJLENBQUM7YUFDbEM7WUFFRCxJQUFJLElBQUksQ0FBQyxhQUFhLElBQUksSUFBSSxFQUFFO2dCQUM1QixJQUFJLENBQUMsYUFBYSxDQUFDLElBQUksQ0FBQyxhQUFhLENBQUMsQ0FBQztnQkFDdkMsSUFBSSxDQUFDLGFBQWEsR0FBRyxJQUFJLENBQUM7YUFDN0I7WUFFRCxJQUFJLEtBQUssR0FBRyxJQUFJLENBQUMsV0FBVyxDQUFDLEtB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\",\"assetPath\":\"Packages/zepeto.module/Social/Runtime/UI/_Resources/Scripts/FollowUserInfoCellView.ts\",\"manifest\":{\"properties\":[{\"assembly\":\"UnityEngine.UI\",\"name\":\"viewName\",\"type\":\"UnityEngine.UI.Text\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"UnityEngine.UI\",\"name\":\"viewProfile\",\"type\":\"UnityEngine.UI.RawImage\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"UnityEngine.UI\",\"name\":\"viewBadge\",\"type\":\"UnityEngine.UI.RawImage\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"viewFollow\",\"type\":\"UnityEngine.GameObject\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"UnityEngine.CoreModule\",\"name\":\"viewFollowing\",\"type\":\"UnityEngine.GameObject\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]},{\"assembly\":\"ZEPETO.Module.Social\",\"name\":\"btnFollow\",\"type\":\"ZEPETO.Module.Social.FollowUIActionHandler\",\"isArray\":false,\"initValue\":[],\"enumKeys\":[],\"enumValues\":[],\"attributes\":[]}],\"name\":\"FollowUserInfoCellView\",\"description\":\"\",\"hasAnimatorMove\":false},\"isCompiled\":true}"
+  typescriptHash: 445ba93402e96ce14744a68f1412e25a
+  onlyWriteTrigger: 0

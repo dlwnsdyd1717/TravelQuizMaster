@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: 580025e7125bb4283884f236a6e68f9e
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 1
+  assembly: ZEPETO.Chat
+  generateAllTypes: 0
+  types:
+  - ZEPETO.Chat.MessageType
+  - ZEPETO.Chat.IMessage
+  - ZEPETO.Chat.UserMessage
+  - ZEPETO.Chat.ZepetoChat
+  - UnityEngine.Events.UnityEvent<ZEPETO.Chat.IMessage>
+  generateWrapper: 1
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters:
+  - ZEPETO.Chat.UserMessage@messageType
+  - ZEPETO.Chat.UserMessage@sessionId
+  - ZEPETO.Chat.ZepetoChat@InnerEvent
+  wrapperOutputDirectory: Generated
+  compiledResult: 
+  typescriptHash: 
+  onlyWriteTrigger: 0

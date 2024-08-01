@@ -1,0 +1,32 @@
+{
+	"name": "zepeto.multiplay",
+	"scope": "zepeto",
+	"displayName": "ZEPETO.Multiplay",
+	"version": "1.11.1",
+	"unity": "2020.3",
+	"description": "Package that supports multiple users connecting and playing a World simultaneously. It provides the server/client development and local test environment.",
+	"keywords": [
+		"zepeto",
+		"multiplay"
+	],
+	"samples": [
+		{
+			"displayName": "Examples",
+			"description": "A bunch of examples using the Zepeto Script API.",
+			"path": "./examples~"
+		}
+	],
+	"category": "Unity",
+	"hideInEditor": false,
+	"author": {
+		"name": "ZEPETO",
+		"email": "support@zepeto.me",
+		"url": "https://zepeto.me/"
+	},
+	"dependencies": {
+		"com.unity.nuget.newtonsoft-json": "2.0.0"
+	},
+	"documentationUrl": "https://docs.zepeto.me/studio-world/docs/multiplay/",
+	"licensesUrl": "https://docs.zepeto.me/studio-world/docs/zepeto_world_license",
+	"commitId": "0b5533fd660955a47b08172a25121b2d23c7f171"
+}

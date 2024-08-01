@@ -1,0 +1,36 @@
+fileFormatVersion: 2
+guid: 0d3c8a2f69e4044aca8208a502b2d131
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 1
+  assembly: ZEPETO.Product
+  generateAllTypes: 0
+  types:
+  - ZEPETO.Currency.BalanceRecord
+  - ZEPETO.Currency.BalanceResponse
+  - ZEPETO.Currency.BalanceListResponse
+  - ZEPETO.Product.OfficialCurrencyBalanceRequest
+  - ZEPETO.Product.BaseRequest<ZEPETO.Currency.BalanceResponse>
+  - ZEPETO.Product.BaseRequest<ZEPETO.Currency.BalanceListResponse>
+  - ZEPETO.Currency.CurrencyService
+  - ZEPETO.Currency.CurrencyError
+  - ZEPETO.Currency.CurrencyBaseResponse
+  - System.Collections.Generic.Dictionary<string, long>
+  - UnityEngine.Events.UnityEvent
+  - ZEPETO.Product.BaseResponse
+  - ZEPETO.Product.ProductBaseResponse
+  generateWrapper: 1
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: 
+  typescriptHash: 
+  onlyWriteTrigger: 0

@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 91eb6417081164f9d93a62169f18f48e
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nconst
+    ZEPETO_Module_Social_1 = require(\"ZEPETO.Module.Social\");\r\nclass FollowTotalCountCellView
+    extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Awake() {\r\n        const
+    totalCountCellView = this.GetComponent($typeof(ZEPETO_Module_Social_1.TotalCountCellView));\r\n       
+    if (!totalCountCellView)\r\n            return;\r\n        totalCountCellView.onActivated.AddListener(()
+    => {\r\n            this.viewTotalCount.text = totalCountCellView.textCount;\r\n       
+    });\r\n    }\r\n}\r\nexports.default = FollowTotalCountCellView;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRm9sbG93VG90YWxDb3VudENlbGxWaWV3LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiRm9sbG93VG90YWxDb3VudENlbGxWaWV3LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsaURBQW1EO0FBQ25ELCtEQUF1RDtBQUl2RCxNQUFxQix3QkFBeUIsU0FBUSxxQ0FBcUI7SUFJdkUsS0FBSztRQUNELE1BQU0sa0JBQWtCLEdBQUcsSUFBSSxDQUFDLFlBQVksU0FBQyx5Q0FBa0IsRUFBRyxDQUFDO1FBRW5FLElBQUksQ0FBQyxrQkFBa0I7WUFBRSxPQUFPO1FBRWhDLGtCQUFrQixDQUFDLFdBQVcsQ0FBQyxXQUFXLENBQUMsR0FBRyxFQUFFO1lBQzVDLElBQUksQ0FBQyxjQUFjLENBQUMsSUFBSSxHQUFHLGtCQUFrQixDQUFDLFNBQVMsQ0FBQztRQUM1RCxDQUFDLENBQUMsQ0FBQztJQUVQLENBQUM7Q0FFSjtBQWZELDJDQWVDIn0=","assetPath":"Packages/zepeto.module/Social/Runtime/UI/_Resources/Scripts/FollowTotalCountCellView.ts","manifest":{"properties":[{"assembly":"UnityEngine.UI","name":"viewTotalCount","type":"UnityEngine.UI.Text","isArray":false,"initValue":[],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"FollowTotalCountCellView","description":"","hasAnimatorMove":false},"isCompiled":true}'
+  typescriptHash: 4626659c6674b1026b55d7371c4b8d81
+  onlyWriteTrigger: 0

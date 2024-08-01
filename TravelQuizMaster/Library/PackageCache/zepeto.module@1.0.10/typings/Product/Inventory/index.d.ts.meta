@@ -1,0 +1,35 @@
+fileFormatVersion: 2
+guid: 75402807dc57d4463983a26b9a3da8bd
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 1
+  assembly: ZEPETO.Product
+  generateAllTypes: 0
+  types:
+  - ZEPETO.Inventory.InventoryListResponse
+  - ZEPETO.Inventory.InventoryResponse
+  - ZEPETO.Inventory.InventoryRecord
+  - ZEPETO.Inventory.InventoryService
+  - ZEPETO.Product.BaseRequest<ZEPETO.Inventory.InventoryListResponse>
+  - ZEPETO.Product.BaseRequest<ZEPETO.Inventory.InventoryResponse>
+  - ZEPETO.Inventory.CheckInventoryRequest
+  - ZEPETO.Inventory.CheckInventoryResponse
+  - ZEPETO.Inventory.InventoryError
+  - ZEPETO.Inventory.InventoryBaseResponse
+  - ZEPETO.Product.BaseResponse
+  - ZEPETO.Product.ProductBaseResponse
+  generateWrapper: 1
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: 
+  typescriptHash: 
+  onlyWriteTrigger: 0

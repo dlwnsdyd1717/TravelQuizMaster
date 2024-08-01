@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: d13ebc04429464b87b1a02b6e6918be0
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 1
+  assembly: ZEPETO.Module.Shop
+  generateAllTypes: 0
+  types:
+  - ZEPETO.Module.Shop.ShopService
+  - ZEPETO.Module.Shop.CategoryResponse
+  - ZEPETO.Module.Shop.CategoryInfo
+  - ZEPETO.Module.Shop.Category
+  - ZEPETO.Module.Shop.ItemKeyword
+  - ZEPETO.Module.Shop.ContentItemListResponse
+  - ZEPETO.Module.Shop.ContentItemResponse
+  - ZEPETO.Module.BaseRequest<ZEPETO.Module.Shop.ContentItemResponse>
+  - ZEPETO.Module.BaseRequest<ZEPETO.Module.Shop.ContentItemListResponse>
+  - ZEPETO.Module.BaseRequest<ZEPETO.Module.Shop.CategoryResponse>
+  - ZEPETO.Module.Shop.ItemGiftResponse
+  - ZEPETO.Module.Shop.ErrorCode
+  - ZEPETO.Module.Shop.GiftBackgroundType
+  - ZEPETO.Module.Shop.ShopDelegate
+  - ZEPETO.Module.PlayBaasResponse
+  - ZEPETO.Module.BaseResponse
+  generateWrapper: 1
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: 
+  typescriptHash: 
+  onlyWriteTrigger: 0
