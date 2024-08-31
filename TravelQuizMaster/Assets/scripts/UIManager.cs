@@ -1,58 +1,64 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class UIManager : MonoBehaviour
 {
-    public Text questionText; // 문제 텍스트
-    public Text feedbackText; // 정답/오답 피드백 텍스트
-    public Text explanationText; // 해설 텍스트
-    public Text timerText; // 타이머 텍스트
-    public Text questionProgressText; // 현재 문제 진행 상태 텍스트
-    public Text endScreenText; // 퀴즈 종료 텍스트
+    // UI 요소들
+    public Text quizText;                 // 문제 및 해설 텍스트
+    public Text timerText;                // 타이머 텍스트 (15->0)
+    public Text answerTexts;              // 정답 여부 텍스트
+    public Text roundText;                // 남은 퀴즈 문제 수 데이터 (현재 라운드/10)
+    public Image[] staistaminaHeart;      // 체력 이미지(3개)
+    public Button OButton;                // 퀴즈 O 선택 버튼
+    public Button Xbutton;                // 퀴즈 X 선택 버튼
 
-    // 문제 텍스트 업데이트
+    // 타이머 상태 변수
+    private float quizTimeRemaining;
+
+    // 문제 텍스트를 업데이트하는 함수
     public void UpdateQuestionText(string text)
     {
-        questionText.text = text;
+        quizText.text = text; // 문제 또는 해설을 표시
     }
 
-    // 타이머 텍스트 업데이트
-    public void UpdateTimerText(float time)
+    // 정답 여부 텍스트를 업데이트하는 함수
+    public void UpdateFeedbackText(bool isCorrect)
     {
-        timerText.text = time.ToString("F1");
+        answerTexts.text = isCorrect ? "정답입니다!" : "오답입니다."; // 정답 여부만 표시
     }
 
-    // 정답/오답 피드백 텍스트 보여주기
-    public void ShowFeedback(string feedback)
+    // 타이머 텍스트를 업데이트하는 함수
+    public void UpdateTimerText(int seconds)
     {
-        feedbackText.text = feedback;
-        feedbackText.gameObject.SetActive(true);
+        timerText.text = seconds.ToString(); // 남은 시간 데이터만 표시
     }
 
-    // 해설 텍스트 보여주기
-    public void ShowExplanation(string explanation)
+    // 남은 문제 수 텍스트를 업데이트하는 함수
+    public void UpdateRemainingQuestionsText(int remainingQuestions)
     {
-        explanationText.text = explanation;
-        explanationText.gameObject.SetActive(true);
+        roundText.text = remainingQuestions.ToString(); // 남은 문제 수 데이터만 표시
     }
 
-    // 해설 텍스트 숨기기
-    public void HideExplanation()
+
+    // 퀴즈 타이머를 시작하는 함수
+    public void StartQuizTimer(int duration, System.Action onTimeUp)
     {
-        explanationText.gameObject.SetActive(false);
+        quizTimeRemaining = duration;
+        StartCoroutine(TimerCoroutine(onTimeUp, quizTimeRemaining));
     }
 
-    // 퀴즈 종료 화면 보여주기
-    public void ShowEndScreen()
+    // 타이머 코루틴
+    private IEnumerator TimerCoroutine(System.Action onTimeUp, float timeRemaining)
     {
-        endScreenText.gameObject.SetActive(true);
-    }
-
-    // 문제 진행 상태 텍스트 업데이트
-    public void UpdateProgress(int currentQuestion, int totalQuestions)
-    {
-        questionProgressText.text = $"Question {currentQuestion}/{totalQuestions}";
+        while (timeRemaining > 0)
+        {
+            timeRemaining -= Time.deltaTime;
+            UpdateTimerText(Mathf.CeilToInt((int)timeRemaining)); // 타이머 업데이트
+            yield return null;
+        }
+        timeRemaining = 0;
+        UpdateTimerText(0); // 타이머 완료
+        onTimeUp?.Invoke();
     }
 }

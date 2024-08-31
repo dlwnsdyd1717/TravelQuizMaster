@@ -1,40 +1,51 @@
 using System.Collections.Generic;
-using UnityEngine;
 using System.IO;
+using UnityEngine;
 
 public class CSVReader : MonoBehaviour
 {
-    // 문제와 정답 정보를 담는 구조체
-    public struct Question
+    public class Question
     {
-        public string questionText;    // 문제 내용
-        public string explanation;     // 해설 내용
-        public bool isCorrect;         // 정답 여부
+        public string questionText;   // 질문 텍스트
+        public string correctAnswer;  // 정답 ("O" 또는 "X")
+
+        public Question(string questionText, string correctAnswer)
+        {
+            this.questionText = questionText;
+            this.correctAnswer = correctAnswer;
+        }
     }
 
-    // CSV 파일에서 문제를 읽어오는 함수
-    public static List<Question> Read(string filePath)
+    public List<Question> ReadQuestions(string filePath, int questionCount)
     {
         List<Question> questions = new List<Question>();
-
-        // CSV 파일을 한 줄씩 읽어옴
-        string[] lines = File.ReadAllLines(filePath);
+        string[] lines = File.ReadAllLines(filePath); // CSV 파일의 모든 줄을 읽어들임
 
         foreach (string line in lines)
         {
-            string[] fields = line.Split(',');
-
-            // 문제와 해설, 정답 여부를 구조체에 담음
-            Question question = new Question
-            {
-                questionText = fields[0],      // 첫 번째 필드: 문제 내용
-                explanation = fields[1],       // 두 번째 필드: 해설 내용
-                isCorrect = filePath.Contains("O")  // 파일 이름에 O가 있으면 정답으로 처리
-            };
-
-            questions.Add(question);
+            string correctAnswer = filePath[filePath.Length - 5].ToString().ToUpper(); // 파일명의 마지막 글자를 정답으로 설정
+            questions.Add(new Question(line, correctAnswer)); // 각 줄을 퀴즈로 추가
         }
 
-        return questions;
+        // 리스트를 무작위로 섞음
+        questions = ShuffleList(questions);
+
+        // 지정된 개수만큼 반환
+        return questions.GetRange(0, Mathf.Min(questionCount, questions.Count));
+    }
+
+    private List<Question> ShuffleList(List<Question> list)
+    {
+        System.Random rng = new System.Random();
+        int n = list.Count;
+        while (n > 1)
+        {
+            n--;
+            int k = rng.Next(n + 1);
+            Question value = list[k];
+            list[k] = list[n];
+            list[n] = value;
+        }
+        return list;
     }
 }

@@ -1,46 +1,89 @@
 using UnityEngine;
-using System;
-using UnityEngine.UI;
 using System.Collections;
 
 public class TimerManager : MonoBehaviour
 {
-    public UIManager uiManager;
+    // 각각의 타이머 제한 시간을 설정하는 변수들
+    public int quizTimeLimit = 15;             // 퀴즈 시간 제한 (초)
+    public int explanationTimeLimit = 15;      // 설명 시간 제한 (초)
+    public int objectChangeTimeLimit = 2;      // 오브젝트 변경 시간 제한 (초)
 
-    private Coroutine currentTimer;
+    // 현재 실행 중인 타이머 코루틴을 저장하기 위한 변수
+    private IEnumerator currentTimerCoroutine;
 
-    // 퀴즈 타이머 시작 (15초)
-    public void StartQuizTimer(System.Action onTimeUp)
+    // 퀴즈 타이머를 시작하는 메서드
+    public void StartQuizTimer()
     {
-        if (currentTimer != null) StopCoroutine(currentTimer);
-        currentTimer = StartCoroutine(RunTimer(15f, onTimeUp));
+        // quizTimeLimit과 OnQuizTimeUp 콜백을 이용해 타이머 시작
+        StartTimer(quizTimeLimit, OnQuizTimeUp);
     }
 
-    // 해설 타이머 시작 (15초)
-    public void StartExplanationTimer(System.Action onTimeUp)
+    // 설명 타이머를 시작하는 메서드
+    public void StartExplanationTimer()
     {
-        if (currentTimer != null) StopCoroutine(currentTimer);
-        currentTimer = StartCoroutine(RunTimer(15f, onTimeUp));
+        // explanationTimeLimit과 OnExplanationTimeUp 콜백을 이용해 타이머 시작
+        StartTimer(explanationTimeLimit, OnExplanationTimeUp);
     }
 
-    // 오브젝트 변경 타이머 시작 (2초)
-    public void StartObjectChangeTimer(System.Action onTimeUp)
+    // 오브젝트 변경 타이머를 시작하는 메서드
+    public void StartObjectChangeTimer()
     {
-        if (currentTimer != null) StopCoroutine(currentTimer);
-        currentTimer = StartCoroutine(RunTimer(2f, onTimeUp));
+        // objectChangeTimeLimit과 OnObjectChangeTimeUp 콜백을 이용해 타이머 시작
+        StartTimer(objectChangeTimeLimit, OnObjectChangeTimeUp);
+    }
+
+    // 타이머를 시작하는 메서드
+    // duration: 타이머 지속 시간 (초)
+    // onTimeUp: 타이머가 끝났을 때 호출될 콜백 메서드
+    private void StartTimer(int duration, System.Action onTimeUp)
+    {
+        // 만약 이전에 실행 중이던 타이머 코루틴이 있다면 중지
+        if (currentTimerCoroutine != null)
+        {
+            StopCoroutine(currentTimerCoroutine);
+        }
+        // 새 타이머 코루틴을 시작하고 참조 저장
+        currentTimerCoroutine = TimerCoroutine(duration, onTimeUp);
+        StartCoroutine(currentTimerCoroutine);
     }
 
     // 타이머 코루틴
-    private IEnumerator RunTimer(float duration, System.Action onTimeUp)
+    // duration: 타이머 지속 시간 (초)
+    // onTimeUp: 타이머가 끝났을 때 호출될 콜백 메서드
+    private IEnumerator TimerCoroutine(int duration, System.Action onTimeUp)
     {
-        float timeLeft = duration;
-        while (timeLeft > 0f)
+        // 남은 시간을 설정
+        float timeRemaining = duration;
+        // 시간이 남아 있는 동안 반복
+        while (timeRemaining > 0)
         {
-            timeLeft -= Time.deltaTime;
-            uiManager.UpdateTimerText(timeLeft);
+            // Time.deltaTime을 사용하여 시간이 지나도록 설정
+            timeRemaining -= Time.deltaTime;
+            // 한 프레임을 건너뜀
             yield return null;
         }
+        // 시간이 다 되면 콜백 메서드를 호출
+        onTimeUp?.Invoke();
+    }
 
-        onTimeUp.Invoke(); // 타이머가 종료되면 호출
+    // 퀴즈 시간이 끝났을 때 호출되는 메서드
+    private void OnQuizTimeUp()
+    {
+        // QuestionController를 찾아서 OnQuizTimeUp 메서드 호출
+        FindObjectOfType<QuestionController>()?.OnQuizTimeUp();
+    }
+
+    // 설명 시간이 끝났을 때 호출되는 메서드
+    private void OnExplanationTimeUp()
+    {
+        // QuestionController를 찾아서 OnExplanationTimeUp 메서드 호출
+        FindObjectOfType<QuestionController>()?.OnExplanationTimeUp();
+    }
+
+    // 오브젝트 변경 시간이 끝났을 때 호출되는 메서드
+    private void OnObjectChangeTimeUp()
+    {
+        // QuestionController를 찾아서 OnObjectChangeTimeUp 메서드 호출
+        FindObjectOfType<QuestionController>()?.OnObjectChangeTimeUp();
     }
 }

@@ -1,156 +1,95 @@
-using System.Collections.Generic;
 using UnityEngine;
-
-// Question 구조체를 독립적으로 정의
-[System.Serializable]
-public struct Question
-{
-    public string questionText;    // 문제 내용
-    public string explanation;     // 해설 내용
-    public bool isCorrect;         // 정답 여부
-}
+using System.Collections.Generic;
+using System.IO;
+using UnityEngine.SceneManagement;
 
 public class QuestionController : MonoBehaviour
 {
-    public UIManager uiManager; // UI 관리 스크립트 참조
-    public TimerManager timerManager; // 타이머 관리 스크립트 참조
+    public TimerManager timerManager;
+    public UIManager uiManager;
+    public CSVReader csvReader;
+    public selectButton selectButtons;
 
-    private List<Question> questions; // 퀴즈 목록
-    private int currentQuestionIndex = 0; // 현재 퀴즈 인덱스
-    private bool playerAnswer; // 플레이어의 선택 (true: O, false: X)
-    private bool isAnswerSubmitted = false; // 정답 제출 여부
-
-    private const int numberOfQuestions = 10; // 출제할 문제 수
+    private List<CSVReader.Question> questions;
+    private CSVReader.Question currentQuestion;
+    private int currentQuestionIndex = 0; // 퀴즈 10문제가 모두 진행되었는지 확인하기 위한 변수
+    private int correctAnswers = 0;
+    public string playerChoice = ""; // 플레이어 선택을 저장하는 변수
+    private bool isAnswered = false;
 
     private void Start()
     {
-        // CSV 파일에서 퀴즈를 불러옴
-        questions = new List<Question>();
-        questions.AddRange(ReadCSV("O.csv", true));  // O.csv에서 정답을 가져옴
-        questions.AddRange(ReadCSV("X.csv", false)); // X.csv에서 오답을 가져옴
-
-        // 퀴즈 목록을 섞음
-        questions = ShuffleList(questions);
-
-        // 10개의 문제만 선택
-        questions = questions.GetRange(0, Mathf.Min(numberOfQuestions, questions.Count));
-
-        // 첫 번째 퀴즈 출력
-        LoadNextQuestion();
+        LoadQuestions();
+        StartQuiz();
     }
 
-    // CSV 파일을 읽어서 Question 리스트를 반환
-    private List<Question> ReadCSV(string filePath, bool isCorrect)
+    private void LoadQuestions()
     {
-        List<Question> questions = new List<Question>();
-        string[] lines = System.IO.File.ReadAllLines(Application.streamingAssetsPath + "/" + filePath);
+        string filePath = Path.Combine(Application.streamingAssetsPath, "osaka_culture_O.csv"); // 문제 파일 경로 설정
+        int numberOfQuestions = 10; // 출제할 문제 개수
 
-        foreach (string line in lines)
+        // 문제를 읽어와서 무작위로 섞고, 지정된 개수만큼 반환
+        questions = csvReader.ReadQuestions(filePath, numberOfQuestions);
+    }
+
+    private void StartQuiz()
+    {
+        if (currentQuestionIndex < questions.Count) // 퀴즈가 진행 중
         {
-            string[] fields = line.Split(',');
-
-            // 문제가 비어있지 않을 경우만 추가
-            if (fields.Length >= 2)
-            {
-                Question question = new Question
-                {
-                    questionText = fields[0],      // 첫 번째 필드: 문제 내용
-                    explanation = fields[1],       // 두 번째 필드: 해설 내용
-                    isCorrect = isCorrect          // 정답 여부
-                };
-
-                questions.Add(question);
-            }
+            isAnswered = false;
+            playerChoice = "";
+            currentQuestion = questions[currentQuestionIndex];
+            uiManager.UpdateQuestionText(currentQuestion.questionText);
+            timerManager.StartQuizTimer();
         }
-
-        return questions;
-    }
-
-    // 플레이어의 정답 선택을 저장
-    public void SetPlayerAnswer(bool answer)
-    {
-        playerAnswer = answer;
-        isAnswerSubmitted = true; // 답이 제출되었음을 표시
-    }
-
-    // 다음 문제를 로드
-    private void LoadNextQuestion()
-    {
-        if (currentQuestionIndex < questions.Count)
+        else                                        // 퀴즈가 종료
         {
-            uiManager.UpdateQuestionText(questions[currentQuestionIndex].questionText);
-            uiManager.UpdateProgress(currentQuestionIndex + 1, questions.Count); // 문제 진행 상태 업데이트
-            isAnswerSubmitted = false;
-
-            // 퀴즈 타이머 시작
-            timerManager.StartQuizTimer(OnQuizTimeUp);
-        }
-        else
-        {
-            EndQuiz(); // 모든 문제를 풀었을 경우
+            SceneManager.LoadScene("Rounge");
         }
     }
 
-    // 퀴즈 타이머 종료 시 호출
-    private void OnQuizTimeUp()
+    // 플레이어가 답을 선택했을 때 호출되는 함수
+    public void SetPlayerAnswer(bool selectedO)
     {
-        CheckAnswer(); // 정답 확인
-        uiManager.ShowExplanation(questions[currentQuestionIndex].explanation);
-
-        // 해설 타이머 시작
-        timerManager.StartExplanationTimer(OnExplanationTimeUp);
-    }
-
-    // 정답 확인
-    private void CheckAnswer()
-    {
-        if (isAnswerSubmitted)
+        if (!isAnswered)
         {
-            if (playerAnswer == questions[currentQuestionIndex].isCorrect)
-            {
-                uiManager.ShowFeedback("Correct!");
-            }
-            else
-            {
-                uiManager.ShowFeedback("Wrong!");
-            }
-        }
-        else
-        {
-            uiManager.ShowFeedback("Time's up! Wrong!");
+            selectButtons.checkButton(); // O를 선택했는지 X를 선택했는지 설정
+            isAnswered = true; // 답이 선택됨을 표시
         }
     }
 
-    // 해설 타이머 종료 시 호출
-    private void OnExplanationTimeUp()
+    // 정답을 확인하고 피드백을 UI에 전달하는 함수
+    public void CheckAnswer()
     {
-        currentQuestionIndex++; // 다음 문제로 이동
-        uiManager.HideExplanation();
-        timerManager.StartObjectChangeTimer(OnObjectChangeTimeUp); // 오브젝트 변경 타이머 시작
-    }
-
-    // 오브젝트 변경 타이머 종료 시 호출
-    private void OnObjectChangeTimeUp()
-    {
-        LoadNextQuestion(); // 다음 퀴즈 로드
-    }
-
-    // 퀴즈 종료
-    private void EndQuiz()
-    {
-        uiManager.ShowEndScreen(); // 퀴즈 종료 화면 출력
-    }
-
-    // 리스트 섞기
-    private List<Question> ShuffleList(List<Question> list)
-    {
-        for (int i = 0; i < list.Count; i++)
+        bool isCorrect = (playerChoice == currentQuestion.correctAnswer);
+        uiManager.UpdateFeedbackText(isCorrect); // 정답 여부 텍스트 업데이트
+        if (isCorrect)
         {
-            Question temp = list[i];
-            int randomIndex = Random.Range(i, list.Count);
-            list[i] = list[randomIndex];
-            list[randomIndex] = temp;
+            correctAnswers++;
         }
-        return list;
+        timerManager.StartExplanationTimer();
+    }
+
+    // 퀴즈 타이머가 종료되었을 때 호출되는 함수
+    public void OnQuizTimeUp()
+    {
+        if (!isAnswered)
+        {
+            playerChoice = "None"; // 정답을 선택하지 않은 경우
+        }
+        CheckAnswer();
+    }
+
+    // 해설 타이머가 종료되었을 때 호출되는 함수
+    public void OnExplanationTimeUp()
+    {
+        timerManager.StartObjectChangeTimer();
+    }
+
+    // 오브젝트 변경 타이머가 종료되었을 때 호출되는 함수
+    public void OnObjectChangeTimeUp()
+    {
+        currentQuestionIndex++;
+        StartQuiz();
     }
 }

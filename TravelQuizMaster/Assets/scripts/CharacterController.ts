@@ -10,9 +10,9 @@ export default class CharacterController extends ZepetoScriptBehaviour {
     Start() {
         // Set Character Spawn Position 생성된 캐릭터 위치
         const spawnInfo = new SpawnInfo();
-        spawnInfo.position = new Vector3(0, 2, 0);
+        spawnInfo.position = new Vector3(0, 2, -5);
         // Set Character Spawn Rotation 생성된 캐릭터의 방향
-        spawnInfo.rotation = Quaternion.Euler(0, 0, 0);
+        spawnInfo.rotation = Quaternion.Euler(0, 180, 0);
 
         // Grab the user id specified from logging into zepeto through the editor.
         ZepetoPlayers.instance.CreatePlayerWithUserId(WorldService.userId, spawnInfo, true);
