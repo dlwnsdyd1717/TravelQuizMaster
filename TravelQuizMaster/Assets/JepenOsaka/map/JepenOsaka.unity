@@ -169,7 +169,6 @@ MonoBehaviour:
   timerManager: {fileID: 1521441559}
   uiManager: {fileID: 1193387543}
   csvReader: {fileID: 688407484}
-  selectButtons: {fileID: 1568317150}
   playerChoice: 
 --- !u!1 &214786915
 GameObject:
@@ -205,7 +204,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 15}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &214786917
@@ -241,7 +240,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uC815\uB2F5 \uC624\uB2F5 \uACB0\uACFC"
+  m_Text: 
 --- !u!222 &214786918
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -284,7 +283,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 208}
+  m_AnchoredPosition: {x: 0, y: 218}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &318324629
@@ -309,10 +308,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 35
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -320,7 +319,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uD0C0\uC774\uBA38"
+  m_Text: 
 --- !u!222 &318324630
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -620,6 +619,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e40e9fce41465f42b690976b8fae759, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  csvFileO: {fileID: 4900000, guid: 87c6d0f7033551447a20b4304eb7a7f6, type: 3}
+  csvFileX: {fileID: 4900000, guid: f3b35e658ece5c14a9e84bdffce3589e, type: 3}
 --- !u!4 &688407485
 Transform:
   m_ObjectHideFlags: 0
@@ -1144,8 +1145,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766515301}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 15, z: 0}
-  m_LocalScale: {x: 13, y: 13, z: 0.005}
+  m_LocalPosition: {x: 0, y: 7, z: 0}
+  m_LocalScale: {x: 8, y: 5, z: 0.01}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -1307,7 +1308,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 984458442}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 200376957}
+        m_TargetAssemblyTypeName: QuestionController, Assembly-CSharp
+        m_MethodName: OButtonPress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &984458442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1321,7 +1334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.18160377, g: 0.21270175, b: 0.7264151, a: 1}
+  m_Color: {r: 0.8490566, g: 0.56807387, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1446,8 +1459,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 115.669}
-  m_SizeDelta: {x: 800, y: 110}
+  m_AnchoredPosition: {x: 0, y: 151}
+  m_SizeDelta: {x: 800, y: 70.9327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1120413116
 MonoBehaviour:
@@ -1471,10 +1484,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 35
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1482,7 +1495,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uD034\uC988\uB098 \uD574\uC124"
+  m_Text: 
 --- !u!222 &1120413117
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1599,12 +1612,6 @@ MonoBehaviour:
   timerText: {fileID: 318324629}
   answerTexts: {fileID: 214786917}
   roundText: {fileID: 1947392764}
-  staistaminaHeart:
-  - {fileID: 1173450031}
-  - {fileID: 461290637}
-  - {fileID: 871988267}
-  OButton: {fileID: 984458441}
-  Xbutton: {fileID: 1568317147}
 --- !u!4 &1193387544
 Transform:
   m_ObjectHideFlags: 0
@@ -1744,9 +1751,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d4bbd5c9c9014b49b0f340cf8909f06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quizTimeLimit: 15
-  explanationTimeLimit: 15
-  objectChangeTimeLimit: 2
+  quizTimeLimit: 5
+  explanationTimeLimit: 5
+  uiManager: {fileID: 1193387543}
 --- !u!4 &1521441560
 Transform:
   m_ObjectHideFlags: 0
@@ -1773,7 +1780,6 @@ GameObject:
   - component: {fileID: 1568317149}
   - component: {fileID: 1568317148}
   - component: {fileID: 1568317147}
-  - component: {fileID: 1568317150}
   m_Layer: 5
   m_Name: XButton
   m_TagString: Untagged
@@ -1844,7 +1850,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1568317148}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 200376957}
+        m_TargetAssemblyTypeName: QuestionController, Assembly-CSharp
+        m_MethodName: XButtonPress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1568317148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1858,7 +1876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8113208, g: 0.22579211, b: 0.22579211, a: 1}
+  m_Color: {r: 0.81568635, g: 0.54509807, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1883,19 +1901,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1568317145}
   m_CullTransparentMesh: 1
---- !u!114 &1568317150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1568317145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99444a04def774c4f893d81f66591619, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questionController: {fileID: 200376957}
 --- !u!1 &1704997385
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,8 +1987,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 447, y: 208}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 500, y: 213}
+  m_SizeDelta: {x: 70, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1947392764
 MonoBehaviour:
@@ -2007,10 +2012,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 35
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2018,7 +2023,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uD034\uC988 \uB77C\uC6B4\uB4DC"
+  m_Text: 
 --- !u!222 &1947392765
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -6,10 +6,11 @@ public class TimerManager : MonoBehaviour
     // 각각의 타이머 제한 시간을 설정하는 변수들
     public int quizTimeLimit = 15;             // 퀴즈 시간 제한 (초)
     public int explanationTimeLimit = 15;      // 설명 시간 제한 (초)
-    public int objectChangeTimeLimit = 2;      // 오브젝트 변경 시간 제한 (초)
 
     // 현재 실행 중인 타이머 코루틴을 저장하기 위한 변수
     private IEnumerator currentTimerCoroutine;
+
+    public UIManager uiManager;
 
     // 퀴즈 타이머를 시작하는 메서드
     public void StartQuizTimer()
@@ -23,13 +24,6 @@ public class TimerManager : MonoBehaviour
     {
         // explanationTimeLimit과 OnExplanationTimeUp 콜백을 이용해 타이머 시작
         StartTimer(explanationTimeLimit, OnExplanationTimeUp);
-    }
-
-    // 오브젝트 변경 타이머를 시작하는 메서드
-    public void StartObjectChangeTimer()
-    {
-        // objectChangeTimeLimit과 OnObjectChangeTimeUp 콜백을 이용해 타이머 시작
-        StartTimer(objectChangeTimeLimit, OnObjectChangeTimeUp);
     }
 
     // 타이머를 시작하는 메서드
@@ -58,7 +52,10 @@ public class TimerManager : MonoBehaviour
         while (timeRemaining > 0)
         {
             // Time.deltaTime을 사용하여 시간이 지나도록 설정
+            int i = (int)timeRemaining;
+            uiManager.timerText.text = i.ToString();
             timeRemaining -= Time.deltaTime;
+            
             // 한 프레임을 건너뜀
             yield return null;
         }
@@ -69,21 +66,14 @@ public class TimerManager : MonoBehaviour
     // 퀴즈 시간이 끝났을 때 호출되는 메서드
     private void OnQuizTimeUp()
     {
-        // QuestionController를 찾아서 OnQuizTimeUp 메서드 호출
-        FindObjectOfType<QuestionController>()?.OnQuizTimeUp();
+        // QuestionController를 찾아서 QuestionEnd 메서드 호출
+        FindObjectOfType<QuestionController>()?.QuestionEnd();
     }
 
     // 설명 시간이 끝났을 때 호출되는 메서드
     private void OnExplanationTimeUp()
     {
         // QuestionController를 찾아서 OnExplanationTimeUp 메서드 호출
-        FindObjectOfType<QuestionController>()?.OnExplanationTimeUp();
-    }
-
-    // 오브젝트 변경 시간이 끝났을 때 호출되는 메서드
-    private void OnObjectChangeTimeUp()
-    {
-        // QuestionController를 찾아서 OnObjectChangeTimeUp 메서드 호출
-        FindObjectOfType<QuestionController>()?.OnObjectChangeTimeUp();
+        FindObjectOfType<QuestionController>()?.commentaryEnd();
     }
 }

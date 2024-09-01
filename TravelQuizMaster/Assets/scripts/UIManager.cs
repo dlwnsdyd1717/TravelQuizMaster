@@ -9,9 +9,9 @@ public class UIManager : MonoBehaviour
     public Text timerText;                // 타이머 텍스트 (15->0)
     public Text answerTexts;              // 정답 여부 텍스트
     public Text roundText;                // 남은 퀴즈 문제 수 데이터 (현재 라운드/10)
-    public Image[] staistaminaHeart;      // 체력 이미지(3개)
-    public Button OButton;                // 퀴즈 O 선택 버튼
-    public Button Xbutton;                // 퀴즈 X 선택 버튼
+    //public Image[] staistaminaHeart;      // 체력 이미지(3개)
+    //public Button OButton;                // 퀴즈 O 선택 버튼
+    //public Button Xbutton;                // 퀴즈 X 선택 버튼
 
     // 타이머 상태 변수
     private float quizTimeRemaining;
@@ -23,9 +23,9 @@ public class UIManager : MonoBehaviour
     }
 
     // 정답 여부 텍스트를 업데이트하는 함수
-    public void UpdateFeedbackText(bool isCorrect)
+    public void UpdateFeedbackText(string text)
     {
-        answerTexts.text = isCorrect ? "정답입니다!" : "오답입니다."; // 정답 여부만 표시
+        answerTexts.text = text;    // 정답 오답 타임오버 여부만 표시
     }
 
     // 타이머 텍스트를 업데이트하는 함수
@@ -37,7 +37,7 @@ public class UIManager : MonoBehaviour
     // 남은 문제 수 텍스트를 업데이트하는 함수
     public void UpdateRemainingQuestionsText(int remainingQuestions)
     {
-        roundText.text = remainingQuestions.ToString(); // 남은 문제 수 데이터만 표시
+        roundText.text = remainingQuestions.ToString() + "/10"; // 남은 문제 수 데이터만 표시
     }
 
 
@@ -61,4 +61,5 @@ public class UIManager : MonoBehaviour
         UpdateTimerText(0); // 타이머 완료
         onTimeUp?.Invoke();
     }
+
 }
