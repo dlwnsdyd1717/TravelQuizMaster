@@ -37,7 +37,7 @@ public class UIManager : MonoBehaviour
     // 남은 문제 수 텍스트를 업데이트하는 함수
     public void UpdateRemainingQuestionsText(int remainingQuestions)
     {
-        roundText.text = remainingQuestions.ToString() + "/10"; // 남은 문제 수 데이터만 표시
+        roundText.text = remainingQuestions.ToString() + " 라운드"; // 남은 문제 수 데이터만 표시
     }
 
 
