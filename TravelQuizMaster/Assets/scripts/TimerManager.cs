@@ -61,11 +61,13 @@ public class TimerManager : MonoBehaviour
         }
         // 시간이 다 되면 콜백 메서드를 호출
         onTimeUp?.Invoke();
+       
     }
 
     // 퀴즈 시간이 끝났을 때 호출되는 메서드
     private void OnQuizTimeUp()
     {
+
         // QuestionController를 찾아서 QuestionEnd 메서드 호출
         FindObjectOfType<QuestionController>()?.QuestionEnd();
     }

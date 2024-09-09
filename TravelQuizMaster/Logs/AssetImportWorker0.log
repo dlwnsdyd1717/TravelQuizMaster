@@ -15,11 +15,11 @@ C:/unityProjects/TravelQuizMaster
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-13017
+9108
 Successfully changed project path to: C:/unityProjects/TravelQuizMaster
 C:/unityProjects/TravelQuizMaster
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 97.62 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 89.63 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.9f1 (108be757e447)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -35,24 +35,24 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56632
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56636
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Trying to register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll (that doesn't exist). Retrying without overrides.
 Platform support module is not available: C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006550 seconds.
+Registered in 0.006778 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 45.06 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 43.67 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.314 seconds
+- Completed reload, in  2.309 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.100154 seconds.
+Registered in 0.102724 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 44.78 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 44.81 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 NullReferenceException: Object reference not set to an instance of an object
   at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
@@ -88,114 +88,58 @@ NullReferenceException: Object reference not set to an instance of an object
   at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.419 seconds
+- Completed reload, in  1.442 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 1.18 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.89 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1975 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 110.9 MB.
-System memory in use after: 111.0 MB.
+System memory in use before: 111.0 MB.
+System memory in use after: 111.2 MB.
 
 Unloading 112 unused Assets to reduce memory usage. Loaded Objects now: 2685.
-Total: 2.463400 ms (FindLiveObjects: 0.256000 ms CreateObjectMapping: 0.111400 ms MarkObjects: 1.986700 ms  DeleteObjects: 0.108400 ms)
+Total: 4.205900 ms (FindLiveObjects: 0.258700 ms CreateObjectMapping: 0.102000 ms MarkObjects: 3.666100 ms  DeleteObjects: 0.177200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Material/textBackground4.mat
-  artifactKey: Guid(8299285f776991a488bca86d04ce12b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material/textBackground4.mat using Guid(8299285f776991a488bca86d04ce12b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d2d60b33280b61a52bb0e209cde9864') in 0.127963 seconds
-  Import took 0.131406 seconds .
+  path: Assets/scripts/teleportJO.cs
+  artifactKey: Guid(481513f6a6b81c340bd2c23bfb47b7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/teleportJO.cs using Guid(481513f6a6b81c340bd2c23bfb47b7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c51886ccdca99e31bbb75f023b471b4') in 0.047032 seconds
+  Import took 0.051155 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 575.027138 seconds.
-  path: Assets/Product/Resources/ProductSettings.asset
-  artifactKey: Guid(50258dfa60c5a974585403dcc5e66e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Product/Resources/ProductSettings.asset using Guid(50258dfa60c5a974585403dcc5e66e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5f49eca1484f489272a42fb569e7ada') in 0.011799 seconds
-  Import took 0.015464 seconds .
+  Time since last request: 311.988031 seconds.
+  path: Assets/scripts/TimerManager.cs
+  artifactKey: Guid(6d4bbd5c9c9014b49b0f340cf8909f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/TimerManager.cs using Guid(6d4bbd5c9c9014b49b0f340cf8909f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0787863c0c7319ab1b17771ba1b02746') in 0.004051 seconds
+  Import took 0.008242 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 28.201818 seconds.
-  path: Assets/AssetPackages/roungeAsset/mirrorball
-  artifactKey: Guid(9308189f6e4e6e7448ceaf421728da26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPackages/roungeAsset/mirrorball using Guid(9308189f6e4e6e7448ceaf421728da26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9f1b4cd61efec5fe131b3c8aa61b2d0') in 0.004425 seconds
-  Import took 0.007722 seconds .
+  Time since last request: 12.018913 seconds.
+  path: Assets/scripts/TimerManager.cs
+  artifactKey: Guid(6d4bbd5c9c9014b49b0f340cf8909f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/TimerManager.cs using Guid(6d4bbd5c9c9014b49b0f340cf8909f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a43d664045e143f096b1a20cfa8cc61') in 0.004207 seconds
+  Import took 0.008233 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004915 seconds.
-  path: Assets/AssetPackages/roungeAsset/mirrorball
-  artifactKey: Guid(9308189f6e4e6e7448ceaf421728da26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPackages/roungeAsset/mirrorball using Guid(9308189f6e4e6e7448ceaf421728da26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9f1b4cd61efec5fe131b3c8aa61b2d0') in 0.003461 seconds
-  Import took 0.006472 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.183324 seconds.
-  path: Assets/AssetPackages/roungeAsset/mirrorball/5fa72d1f7482_Make_a_white_mirror.obj
-  artifactKey: Guid(9d295a9f9903caa41bc5f8fea7a4dd7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPackages/roungeAsset/mirrorball/5fa72d1f7482_Make_a_white_mirror.obj using Guid(9d295a9f9903caa41bc5f8fea7a4dd7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2e1d6dcd7e2b9da24c22a3894794715') in 0.053957 seconds
-  Import took 0.057218 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/AssetPackages/roungeAsset/mirrorball/5fa72d1f7482_Make_a_white_mirror_metallic.jpg
-  artifactKey: Guid(fbbca8085df004649a4edeceae0997fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPackages/roungeAsset/mirrorball/5fa72d1f7482_Make_a_white_mirror_metallic.jpg using Guid(fbbca8085df004649a4edeceae0997fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f566803e76aca026f30fe4f67aa20ec0') in 0.035185 seconds
-  Import took 0.038294 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/AssetPackages/roungeAsset/mirrorball/5fa72d1f7482_Make_a_white_mirror_texture_kd.jpg
-  artifactKey: Guid(25f22a12fa223064a93c74c4f4e2d65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPackages/roungeAsset/mirrorball/5fa72d1f7482_Make_a_white_mirror_texture_kd.jpg using Guid(25f22a12fa223064a93c74c4f4e2d65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76ee5f6c61d88b6183c2ebbacb0885c7') in 0.012310 seconds
-  Import took 0.015156 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/AssetPackages/roungeAsset/mirrorball/5fa72d1f7482_Make_a_white_mirror_roughness.jpg
-  artifactKey: Guid(2c80a05e8ebfc39489d79cce60dd7999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPackages/roungeAsset/mirrorball/5fa72d1f7482_Make_a_white_mirror_roughness.jpg using Guid(2c80a05e8ebfc39489d79cce60dd7999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74bd6a11454c22333ee5fff02cc7faed') in 0.013727 seconds
-  Import took 0.016626 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/AssetPackages/roungeAsset/mirrorball/5fa72d1f7482_Make_a_white_mirror_normals.jpg
-  artifactKey: Guid(7337622762e6b024699fb1d811a5ef9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AssetPackages/roungeAsset/mirrorball/5fa72d1f7482_Make_a_white_mirror_normals.jpg using Guid(7337622762e6b024699fb1d811a5ef9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa81a35e33165a0c05833054e854764d') in 0.012051 seconds
-  Import took 0.015168 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.096854 seconds.
-  path: Assets/Material/mirrorball
-  artifactKey: Guid(c2f0d0466a29ec549a96d56ad97651b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material/mirrorball using Guid(c2f0d0466a29ec549a96d56ad97651b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07298f607f1b716ed9fe1661dd6c1f93') in 0.004061 seconds
-  Import took 0.007288 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.644458 seconds.
-  path: Assets/Material/mirrorBall.mat
-  artifactKey: Guid(143440aff20050948bfac955218b6873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material/mirrorBall.mat using Guid(143440aff20050948bfac955218b6873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ec55c814f4c98908795c9f83dbe8550') in 0.010646 seconds
-  Import took 0.013924 seconds .
+  Time since last request: 7.237243 seconds.
+  path: Assets/scripts/TimerManager.cs
+  artifactKey: Guid(6d4bbd5c9c9014b49b0f340cf8909f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/TimerManager.cs using Guid(6d4bbd5c9c9014b49b0f340cf8909f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbcb4550ad3011eace756d16a648e84a') in 0.004142 seconds
+  Import took 0.008213 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.090642 seconds.
+Registered in 0.095586 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.92 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 NullReferenceException: Object reference not set to an instance of an object
   at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
@@ -231,76 +175,15 @@ NullReferenceException: Object reference not set to an instance of an object
   at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.118 seconds
+- Completed reload, in  1.109 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.91 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1885 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.3 MB.
-System memory in use after: 108.5 MB.
+System memory in use before: 105.1 MB.
+System memory in use after: 105.3 MB.
 
-Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 2828.
-Total: 2.747000 ms (FindLiveObjects: 0.298700 ms CreateObjectMapping: 0.120600 ms MarkObjects: 2.287000 ms  DeleteObjects: 0.039700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.090728 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.LoadEngineSettings () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00016] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.103 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.91 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1879 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 107.9 MB.
-System memory in use after: 108.2 MB.
-
-Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 2831.
-Total: 2.520100 ms (FindLiveObjects: 0.228800 ms CreateObjectMapping: 0.098800 ms MarkObjects: 2.148900 ms  DeleteObjects: 0.042700 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 920.150843 seconds.
-  path: Assets/Material/mirrorBall.mat
-  artifactKey: Guid(143440aff20050948bfac955218b6873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material/mirrorBall.mat using Guid(143440aff20050948bfac955218b6873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ae650692c40df41e4ee227748ead238') in 0.077812 seconds
-  Import took 0.081069 seconds .
+Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 2784.
+Total: 2.469200 ms (FindLiveObjects: 0.242800 ms CreateObjectMapping: 0.088000 ms MarkObjects: 2.101600 ms  DeleteObjects: 0.035900 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
