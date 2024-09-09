@@ -15,11 +15,11 @@ C:/unityProjects/TravelQuizMaster
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-9108
+12392
 Successfully changed project path to: C:/unityProjects/TravelQuizMaster
 C:/unityProjects/TravelQuizMaster
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 89.63 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 89.91 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.9f1 (108be757e447)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -35,24 +35,24 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56636
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56348
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Trying to register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll (that doesn't exist). Retrying without overrides.
 Platform support module is not available: C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006778 seconds.
+Registered in 0.006945 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 43.67 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 44.44 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.309 seconds
+- Completed reload, in  2.320 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.102724 seconds.
+Registered in 0.097871 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 44.81 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 43.11 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 NullReferenceException: Object reference not set to an instance of an object
   at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
@@ -88,102 +88,89 @@ NullReferenceException: Object reference not set to an instance of an object
   at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.442 seconds
+- Completed reload, in  1.395 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 0.89 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.85 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1975 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 111.0 MB.
 System memory in use after: 111.2 MB.
 
 Unloading 112 unused Assets to reduce memory usage. Loaded Objects now: 2685.
-Total: 4.205900 ms (FindLiveObjects: 0.258700 ms CreateObjectMapping: 0.102000 ms MarkObjects: 3.666100 ms  DeleteObjects: 0.177200 ms)
+Total: 2.430600 ms (FindLiveObjects: 0.246200 ms CreateObjectMapping: 0.100100 ms MarkObjects: 1.986800 ms  DeleteObjects: 0.096500 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/scripts/teleportJO.cs
-  artifactKey: Guid(481513f6a6b81c340bd2c23bfb47b7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/scripts/teleportJO.cs using Guid(481513f6a6b81c340bd2c23bfb47b7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c51886ccdca99e31bbb75f023b471b4') in 0.047032 seconds
-  Import took 0.051155 seconds .
+  path: Assets/ChinaShanghai/map/ChinaShanghai_culture.unity
+  artifactKey: Guid(f598caac870f4b347a3c0ea34616066d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ChinaShanghai/map/ChinaShanghai_culture.unity using Guid(f598caac870f4b347a3c0ea34616066d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '643a817563d027b95bb962f6cc24ec30') in 0.012486 seconds
+  Import took 0.016465 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 311.988031 seconds.
-  path: Assets/scripts/TimerManager.cs
-  artifactKey: Guid(6d4bbd5c9c9014b49b0f340cf8909f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/scripts/TimerManager.cs using Guid(6d4bbd5c9c9014b49b0f340cf8909f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0787863c0c7319ab1b17771ba1b02746') in 0.004051 seconds
-  Import took 0.008242 seconds .
+  Time since last request: 18.009456 seconds.
+  path: Assets/Resources/shanghai_food_X.csv
+  artifactKey: Guid(7dd26c3f9f1f3c146b0b886932e70f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/shanghai_food_X.csv using Guid(7dd26c3f9f1f3c146b0b886932e70f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '651cb80d00160181bcbb3c80cc9bcd3a') in 0.045330 seconds
+  Import took 0.049193 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.018913 seconds.
-  path: Assets/scripts/TimerManager.cs
-  artifactKey: Guid(6d4bbd5c9c9014b49b0f340cf8909f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/scripts/TimerManager.cs using Guid(6d4bbd5c9c9014b49b0f340cf8909f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a43d664045e143f096b1a20cfa8cc61') in 0.004207 seconds
-  Import took 0.008233 seconds .
+  Time since last request: 13.922650 seconds.
+  path: Assets/ChinaShanghai/map/ChinaShanghai_food.unity
+  artifactKey: Guid(a22cfe741f0510f429e10ed2ffa12a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ChinaShanghai/map/ChinaShanghai_food.unity using Guid(a22cfe741f0510f429e10ed2ffa12a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f772c260e7619b3920517572a2d1233a') in 0.004502 seconds
+  Import took 0.014711 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.237243 seconds.
-  path: Assets/scripts/TimerManager.cs
-  artifactKey: Guid(6d4bbd5c9c9014b49b0f340cf8909f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/scripts/TimerManager.cs using Guid(6d4bbd5c9c9014b49b0f340cf8909f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbcb4550ad3011eace756d16a648e84a') in 0.004142 seconds
-  Import took 0.008213 seconds .
+  Time since last request: 17.795110 seconds.
+  path: Assets/ChinaShanghai/map/ChinaShanghai_landmark.unity
+  artifactKey: Guid(9634114ddbc086143849be0262ef8f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ChinaShanghai/map/ChinaShanghai_landmark.unity using Guid(9634114ddbc086143849be0262ef8f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '397904f3ececdba262b99d5088ea99f8') in 0.004815 seconds
+  Import took 0.014852 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.095586 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.92 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
+Received Import Request.
+  Time since last request: 31.050925 seconds.
+  path: Assets/JepenOsaka/map/JepenOsaka_food.unity
+  artifactKey: Guid(c5069ea5abead2343bb0dcf0b4610968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JepenOsaka/map/JepenOsaka_food.unity using Guid(c5069ea5abead2343bb0dcf0b4610968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c910b2f942649a7521d875901f6a8d17') in 0.004552 seconds
+  Import took 0.014541 seconds .
 
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.LoadEngineSettings () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000728 seconds.
+  path: Assets/JepenOsaka/map/JepenOsaka_food.unity
+  artifactKey: Guid(c5069ea5abead2343bb0dcf0b4610968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JepenOsaka/map/JepenOsaka_food.unity using Guid(c5069ea5abead2343bb0dcf0b4610968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c910b2f942649a7521d875901f6a8d17') in 0.003868 seconds
+  Import took 0.007017 seconds .
 
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
+========================================================================
+Received Import Request.
+  Time since last request: 22.976128 seconds.
+  path: Assets/JepenOsaka/map/JepenOsaka_landmark.unity
+  artifactKey: Guid(c6867a03bfc19214a8f2e48a12f91164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JepenOsaka/map/JepenOsaka_landmark.unity using Guid(c6867a03bfc19214a8f2e48a12f91164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd973afa99c53ed52040ff51a7339d249') in 0.004685 seconds
+  Import took 0.014834 seconds .
 
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00016] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
+========================================================================
+Received Import Request.
+  Time since last request: 5.533586 seconds.
+  path: Assets/JepenOsaka/map/JepenOsaka_traffic.unity
+  artifactKey: Guid(3be2c299974895e43a32a367a484fdce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JepenOsaka/map/JepenOsaka_traffic.unity using Guid(3be2c299974895e43a32a367a484fdce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2debbb9244d54c28a6b741589971a59') in 0.003901 seconds
+  Import took 0.013793 seconds .
 
-Mono: successfully reloaded assembly
-- Completed reload, in  1.109 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.91 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1885 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.1 MB.
-System memory in use after: 105.3 MB.
-
-Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 2784.
-Total: 2.469200 ms (FindLiveObjects: 0.242800 ms CreateObjectMapping: 0.088000 ms MarkObjects: 2.101600 ms  DeleteObjects: 0.035900 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/JepenOsaka/map/JepenOsaka_traffic.unity
+  artifactKey: Guid(3be2c299974895e43a32a367a484fdce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/JepenOsaka/map/JepenOsaka_traffic.unity using Guid(3be2c299974895e43a32a367a484fdce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2debbb9244d54c28a6b741589971a59') in 0.004060 seconds
+  Import took 0.007053 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

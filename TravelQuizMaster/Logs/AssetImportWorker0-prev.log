@@ -15,11 +15,11 @@ C:/unityProjects/TravelQuizMaster
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-7343
+9108
 Successfully changed project path to: C:/unityProjects/TravelQuizMaster
 C:/unityProjects/TravelQuizMaster
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 88.56 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 89.63 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.9f1 (108be757e447)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -35,24 +35,24 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56584
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56636
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Trying to register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll (that doesn't exist). Retrying without overrides.
 Platform support module is not available: C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006393 seconds.
+Registered in 0.006778 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 44.59 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 43.67 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.641 seconds
+- Completed reload, in  2.309 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.111940 seconds.
+Registered in 0.102724 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 43.40 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 44.81 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 NullReferenceException: Object reference not set to an instance of an object
   at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
@@ -88,202 +88,58 @@ NullReferenceException: Object reference not set to an instance of an object
   at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.426 seconds
+- Completed reload, in  1.442 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 0.86 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.89 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1975 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 111.0 MB.
-System memory in use after: 111.1 MB.
+System memory in use after: 111.2 MB.
 
 Unloading 112 unused Assets to reduce memory usage. Loaded Objects now: 2685.
-Total: 2.729400 ms (FindLiveObjects: 0.251600 ms CreateObjectMapping: 0.101900 ms MarkObjects: 2.268900 ms  DeleteObjects: 0.106000 ms)
+Total: 4.205900 ms (FindLiveObjects: 0.258700 ms CreateObjectMapping: 0.102000 ms MarkObjects: 3.666100 ms  DeleteObjects: 0.177200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/JepenOsaka/map/JepenOsaka_culture.unity
-  artifactKey: Guid(849b2e51cacf1324c8b6a9d2774fce14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JepenOsaka/map/JepenOsaka_culture.unity using Guid(849b2e51cacf1324c8b6a9d2774fce14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e71e01bd5d6808c4baa63ccde45fe61d') in 0.014172 seconds
-  Import took 0.028177 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 39.762401 seconds.
-  path: Assets/ChinaShanghai/map/ChinaShanghai_traffic.unity
-  artifactKey: Guid(b0f9752790e46254e9692ccff1589259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ChinaShanghai/map/ChinaShanghai_traffic.unity using Guid(b0f9752790e46254e9692ccff1589259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5fb7703eab54010ac2638c366061bdb') in 0.004462 seconds
-  Import took 0.011808 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.451596 seconds.
-  path: Assets/ChinaShanghai/map/ChinaShanghai_food.unity
-  artifactKey: Guid(a22cfe741f0510f429e10ed2ffa12a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ChinaShanghai/map/ChinaShanghai_food.unity using Guid(a22cfe741f0510f429e10ed2ffa12a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3f25799331c486d3180a34ec3a202d7') in 0.004359 seconds
-  Import took 0.009627 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 68.232874 seconds.
-  path: Assets/ChinaShanghai/map/ChinaShanghai_traffic.unity
-  artifactKey: Guid(b0f9752790e46254e9692ccff1589259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ChinaShanghai/map/ChinaShanghai_traffic.unity using Guid(b0f9752790e46254e9692ccff1589259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a670f1c98a075a5298863b0deab292b0') in 0.004083 seconds
-  Import took 0.008059 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001968 seconds.
-  path: Assets/ChinaShanghai/map/ChinaShanghai_traffic.unity
-  artifactKey: Guid(b0f9752790e46254e9692ccff1589259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ChinaShanghai/map/ChinaShanghai_traffic.unity using Guid(b0f9752790e46254e9692ccff1589259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a670f1c98a075a5298863b0deab292b0') in 0.004188 seconds
-  Import took 0.007438 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.574092 seconds.
-  path: Assets/ChinaShanghai/map/ChinaShanghai_landmark.unity
-  artifactKey: Guid(9634114ddbc086143849be0262ef8f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ChinaShanghai/map/ChinaShanghai_landmark.unity using Guid(9634114ddbc086143849be0262ef8f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6958b5aee8616dfd12fc8d53902105cf') in 0.004256 seconds
-  Import took 0.014309 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.165192 seconds.
-  path: Assets/ChinaShanghai/map/ChinaShanghai_landmark.unity
-  artifactKey: Guid(9634114ddbc086143849be0262ef8f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ChinaShanghai/map/ChinaShanghai_landmark.unity using Guid(9634114ddbc086143849be0262ef8f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '358bf7909d8264d185dc1fca1a603edc') in 0.004062 seconds
-  Import took 0.008676 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.425903 seconds.
-  path: Assets/ChinaShanghai/map/ChinaShanghai_culture.unity
-  artifactKey: Guid(f598caac870f4b347a3c0ea34616066d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ChinaShanghai/map/ChinaShanghai_culture.unity using Guid(f598caac870f4b347a3c0ea34616066d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa6ef22fe2afb5cf29edc33673eaa410') in 0.004131 seconds
-  Import took 0.013388 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.640825 seconds.
-  path: Assets/ChinaShanghai/map/ChinaShanghai_culture.unity
-  artifactKey: Guid(f598caac870f4b347a3c0ea34616066d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ChinaShanghai/map/ChinaShanghai_culture.unity using Guid(f598caac870f4b347a3c0ea34616066d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1112dbdc2d55109a45a5719083ae86da') in 0.004200 seconds
-  Import took 0.014064 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.092369 seconds.
-  path: Assets/VietnamDanang/map
-  artifactKey: Guid(3ca92eee59d24d64388c3d431f15cc63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VietnamDanang/map using Guid(3ca92eee59d24d64388c3d431f15cc63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2112d2b05a8fadea9fbe097c641cf80e') in 0.003902 seconds
-  Import took 0.008156 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.500860 seconds.
-  path: Assets/VietnamDanang/map/VietnamDanang_landmark.unity
-  artifactKey: Guid(cd3647faa021cbb4a80884dfd9b2d015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VietnamDanang/map/VietnamDanang_landmark.unity using Guid(cd3647faa021cbb4a80884dfd9b2d015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0dd60a6a6505e48c42c1b063400e590') in 0.004336 seconds
-  Import took 0.013552 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 71.197891 seconds.
-  path: Assets/VietnamDanang/map/VietnamDanang_traffic.unity
-  artifactKey: Guid(087f474a56f30a14493cc73ba1cf47d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VietnamDanang/map/VietnamDanang_traffic.unity using Guid(087f474a56f30a14493cc73ba1cf47d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '105d688a2999463cff4b5c9dd802dcdf') in 0.004091 seconds
-  Import took 0.014269 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.530482 seconds.
-  path: Assets/VietnamDanang/map/VietnamDanang_traffic.unity
-  artifactKey: Guid(087f474a56f30a14493cc73ba1cf47d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VietnamDanang/map/VietnamDanang_traffic.unity using Guid(087f474a56f30a14493cc73ba1cf47d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78637100feaa4b239f10c535ee8d4edb') in 0.004227 seconds
-  Import took 0.008826 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.492595 seconds.
-  path: Assets/VietnamDanang/map/VietnamDanang_food.unity
-  artifactKey: Guid(3c709e43f5856134bb72bf0d5d663925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VietnamDanang/map/VietnamDanang_food.unity using Guid(3c709e43f5856134bb72bf0d5d663925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a61d4fb51687516d8091e1336e646d5f') in 0.004096 seconds
-  Import took 0.007301 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.275960 seconds.
-  path: Assets/VietnamDanang/map/VietnamDanang_culture.unity
-  artifactKey: Guid(95c6d0456f28f9b4081dc0dfa0dea4fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VietnamDanang/map/VietnamDanang_culture.unity using Guid(95c6d0456f28f9b4081dc0dfa0dea4fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '577c41a3c6e48213ab8a501f110ab5ca') in 0.004077 seconds
-  Import took 0.013538 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.852998 seconds.
-  path: Assets/VietnamDanang/map/VietnamDanang.unity
-  artifactKey: Guid(22989de6cb40c3a40a27cdbfb38cd14d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VietnamDanang/map/VietnamDanang.unity using Guid(22989de6cb40c3a40a27cdbfb38cd14d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25f90d57a8cd11510e9d831bd2849ee7') in 0.004236 seconds
-  Import took 0.008367 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.518791 seconds.
-  path: Assets/VietnamDanang/map/VietnamDanang_culture.unity
-  artifactKey: Guid(95c6d0456f28f9b4081dc0dfa0dea4fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VietnamDanang/map/VietnamDanang_culture.unity using Guid(95c6d0456f28f9b4081dc0dfa0dea4fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ba442a184fd59a51e6b65c412676561') in 0.004174 seconds
-  Import took 0.013554 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.442579 seconds.
-  path: Assets/VietnamDanang/map/VietnamDanang_food.unity
-  artifactKey: Guid(3c709e43f5856134bb72bf0d5d663925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VietnamDanang/map/VietnamDanang_food.unity using Guid(3c709e43f5856134bb72bf0d5d663925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e63b09418cd1434c178be20afbf60ab') in 0.004468 seconds
-  Import took 0.012110 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.879822 seconds.
-  path: Assets/VietnamDanang/map/VietnamDanang_landmark.unity
-  artifactKey: Guid(cd3647faa021cbb4a80884dfd9b2d015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VietnamDanang/map/VietnamDanang_landmark.unity using Guid(cd3647faa021cbb4a80884dfd9b2d015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da9cc48faed8faf3075faeef86090a0f') in 0.004932 seconds
-  Import took 0.015692 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.471798 seconds.
-  path: Assets/ChinaShanghai/map/ChinaShanghai_food.unity
-  artifactKey: Guid(a22cfe741f0510f429e10ed2ffa12a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ChinaShanghai/map/ChinaShanghai_food.unity using Guid(a22cfe741f0510f429e10ed2ffa12a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'facf779842059eda667d0522a98955b4') in 0.004183 seconds
-  Import took 0.014170 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 198.143911 seconds.
   path: Assets/scripts/teleportJO.cs
   artifactKey: Guid(481513f6a6b81c340bd2c23bfb47b7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/scripts/teleportJO.cs using Guid(481513f6a6b81c340bd2c23bfb47b7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3024b30f9b9eaca0a206decf3d6d2ff2') in 0.244879 seconds
-  Import took 0.248997 seconds .
+Start importing Assets/scripts/teleportJO.cs using Guid(481513f6a6b81c340bd2c23bfb47b7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c51886ccdca99e31bbb75f023b471b4') in 0.047032 seconds
+  Import took 0.051155 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 32.810900 seconds.
-  path: Assets/scripts/teleportJO.cs
-  artifactKey: Guid(481513f6a6b81c340bd2c23bfb47b7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/scripts/teleportJO.cs using Guid(481513f6a6b81c340bd2c23bfb47b7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62a00cd3e27e10f481abb4b0737c19b9') in 0.004076 seconds
-  Import took 0.008656 seconds .
+  Time since last request: 311.988031 seconds.
+  path: Assets/scripts/TimerManager.cs
+  artifactKey: Guid(6d4bbd5c9c9014b49b0f340cf8909f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/TimerManager.cs using Guid(6d4bbd5c9c9014b49b0f340cf8909f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0787863c0c7319ab1b17771ba1b02746') in 0.004051 seconds
+  Import took 0.008242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.018913 seconds.
+  path: Assets/scripts/TimerManager.cs
+  artifactKey: Guid(6d4bbd5c9c9014b49b0f340cf8909f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/TimerManager.cs using Guid(6d4bbd5c9c9014b49b0f340cf8909f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a43d664045e143f096b1a20cfa8cc61') in 0.004207 seconds
+  Import took 0.008233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.237243 seconds.
+  path: Assets/scripts/TimerManager.cs
+  artifactKey: Guid(6d4bbd5c9c9014b49b0f340cf8909f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scripts/TimerManager.cs using Guid(6d4bbd5c9c9014b49b0f340cf8909f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbcb4550ad3011eace756d16a648e84a') in 0.004142 seconds
+  Import took 0.008213 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.114482 seconds.
+Registered in 0.095586 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.92 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 NullReferenceException: Object reference not set to an instance of an object
   at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
@@ -319,479 +175,15 @@ NullReferenceException: Object reference not set to an instance of an object
   at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.177 seconds
+- Completed reload, in  1.109 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.92 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.91 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1885 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.2 MB.
-System memory in use after: 105.4 MB.
+System memory in use before: 105.1 MB.
+System memory in use after: 105.3 MB.
 
 Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 2784.
-Total: 2.535100 ms (FindLiveObjects: 0.252200 ms CreateObjectMapping: 0.102600 ms MarkObjects: 2.142300 ms  DeleteObjects: 0.037400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 229.201481 seconds.
-  path: Assets/1Rounge/map/Rounge.unity
-  artifactKey: Guid(4950a937a613549baa198138952cae55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/1Rounge/map/Rounge.unity using Guid(4950a937a613549baa198138952cae55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b895016883fe3dc241e90f14c64529d') in 0.019741 seconds
-  Import took 0.023494 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.098923 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.LoadEngineSettings () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00016] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.173 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.92 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1879 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 104.8 MB.
-System memory in use after: 105.0 MB.
-
-Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 2787.
-Total: 2.923700 ms (FindLiveObjects: 0.285200 ms CreateObjectMapping: 0.116000 ms MarkObjects: 2.479000 ms  DeleteObjects: 0.042300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.105173 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.LoadEngineSettings () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00016] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.142 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.93 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1879 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 104.8 MB.
-System memory in use after: 105.1 MB.
-
-Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 2790.
-Total: 2.503600 ms (FindLiveObjects: 0.254800 ms CreateObjectMapping: 0.108100 ms MarkObjects: 2.102600 ms  DeleteObjects: 0.037000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.095497 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.LoadEngineSettings () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00016] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.139 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.06 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1879 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 104.9 MB.
-System memory in use after: 105.1 MB.
-
-Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 2793.
-Total: 2.850600 ms (FindLiveObjects: 0.303000 ms CreateObjectMapping: 0.118200 ms MarkObjects: 2.384800 ms  DeleteObjects: 0.042400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.099773 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.58 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.LoadEngineSettings () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00016] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.295 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.93 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1879 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 104.8 MB.
-System memory in use after: 105.0 MB.
-
-Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 2796.
-Total: 2.653500 ms (FindLiveObjects: 0.416200 ms CreateObjectMapping: 0.153600 ms MarkObjects: 2.042100 ms  DeleteObjects: 0.040800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.098450 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.93 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.LoadEngineSettings () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00016] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.277 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.92 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1879 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 104.9 MB.
-System memory in use after: 105.1 MB.
-
-Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 2799.
-Total: 2.181700 ms (FindLiveObjects: 0.224400 ms CreateObjectMapping: 0.064100 ms MarkObjects: 1.854000 ms  DeleteObjects: 0.038500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.103550 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.LoadEngineSettings () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00016] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.161 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.93 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1879 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 104.9 MB.
-System memory in use after: 105.1 MB.
-
-Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 2802.
-Total: 2.693100 ms (FindLiveObjects: 0.347400 ms CreateObjectMapping: 0.113700 ms MarkObjects: 2.193500 ms  DeleteObjects: 0.037900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.100025 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.94 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.LoadEngineSettings () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00016] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.138 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.04 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1879 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 104.9 MB.
-System memory in use after: 105.2 MB.
-
-Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 2805.
-Total: 3.153800 ms (FindLiveObjects: 0.269500 ms CreateObjectMapping: 0.128900 ms MarkObjects: 2.691400 ms  DeleteObjects: 0.062900 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 4524.354607 seconds.
-  path: Assets/Resources/osaka_culture_X.csv
-  artifactKey: Guid(6f16c19c78289a84b973ba9aa55556ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/osaka_culture_X.csv using Guid(6f16c19c78289a84b973ba9aa55556ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc6548e27e4766c1b91d681306c6c26') in 0.224001 seconds
-  Import took 0.228252 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.897796 seconds.
-  path: Assets/JepenOsaka/map/JepenOsaka_culture.unity
-  artifactKey: Guid(849b2e51cacf1324c8b6a9d2774fce14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/JepenOsaka/map/JepenOsaka_culture.unity using Guid(849b2e51cacf1324c8b6a9d2774fce14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '423ed9930361e3ea867df60617776530') in 0.004786 seconds
-  Import took 0.008383 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 59.224854 seconds.
-  path: Assets/ChinaShanghai/map/ChinaShanghai_traffic.unity
-  artifactKey: Guid(b0f9752790e46254e9692ccff1589259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ChinaShanghai/map/ChinaShanghai_traffic.unity using Guid(b0f9752790e46254e9692ccff1589259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd2df088b571a3c362adb1cae9022efb') in 0.004338 seconds
-  Import took 0.014168 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.099609 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.92 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.MultiplaySettingInitialize () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldEnvironmentInitializer.InitializeOnLoadMethod () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.LoadEngineSettings () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.EngineSettings.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldEditorSettings.IsZaizai () [0x00014] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.SelectDevelopment () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_Development () [0x0000d] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_BuiltinSettings () [0x00000] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.WorldEditorSettings.get_ActiveSetting () [0x00023] in <c723ad8419a1443b99dfb846a9c79f4c>:0 
-  at ZEPETO.World.Editor.EditorPropertyRequestService.RequestPropertiesAsync[T] (System.String key) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.LoadForbiddenTypes () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.ForbiddenTypes.Initialize () [0x00052] in <800d53a62f6240719bfad768be011f42>:0 
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetDeserializedWorldPackageInfo () [0x00016] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.GetFieldValue[T] (System.String field) [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.WorldPackageEditorUtils.get_ZepetoMinVersion () [0x00000] in <800d53a62f6240719bfad768be011f42>:0 
-  at ZEPETO.World.Editor.Editor.WorldEditorInitializer.EditorInitializer () [0x00001] in <800d53a62f6240719bfad768be011f42>:0 
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.158 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.92 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1879 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.0 MB.
-System memory in use after: 105.2 MB.
-
-Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 2808.
-Total: 2.579600 ms (FindLiveObjects: 0.239200 ms CreateObjectMapping: 0.089300 ms MarkObjects: 2.205500 ms  DeleteObjects: 0.044800 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 234.192447 seconds.
-  path: Assets/1Rounge/map/Rounge.unity
-  artifactKey: Guid(4950a937a613549baa198138952cae55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/1Rounge/map/Rounge.unity using Guid(4950a937a613549baa198138952cae55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bf9bc4aea45c5a67389fec64491827a') in 0.018938 seconds
-  Import took 0.029160 seconds .
+Total: 2.469200 ms (FindLiveObjects: 0.242800 ms CreateObjectMapping: 0.088000 ms MarkObjects: 2.101600 ms  DeleteObjects: 0.035900 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
