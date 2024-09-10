@@ -14,7 +14,7 @@ export default class CharacterController extends ZepetoScriptBehaviour {
         // Set Character Spawn Rotation 생성된 캐릭터의 방향
         spawnInfo.rotation = Quaternion.Euler(0, 180, 0);
 
-        // Grab the user id specified from logging into zepeto through the editor.
+        // Grab the user id specified from logging into zepeto through the editor. 에디터를 통해 zepeto에 로그인할 때 지정한 사용자 ID를 가져옵니다.
         ZepetoPlayers.instance.CreatePlayerWithUserId(WorldService.userId, spawnInfo, true);
         ZepetoPlayers.instance.OnAddedLocalPlayer.AddListener(() => {
             const player: LocalPlayer = ZepetoPlayers.instance.LocalPlayer;

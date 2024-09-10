@@ -32,43 +32,43 @@ public class teleportJO : MonoBehaviour
             }
 
             // 중국 상하이 이동
-            else if (gameObject.name == "telCS_landmark")
+            else if (gameObject.name == "telCS_landmark")           // 중국 상하이 "랜드마크" 게임오브젝트에 부딪친다면
             {
-                SceneManager.LoadScene("ChinaShanghai_landmark");
+                SceneManager.LoadScene("ChinaShanghai_landmark");   // 중국 상하이 "랜드마크" 퀴즈 맵으로 이동 ->
             }
-            else if (gameObject.name == "telCS_culture")
+            else if (gameObject.name == "telCS_culture")            // 중국 상하이 "문화" 게임오브젝트에 부딪친다면
             {
-                SceneManager.LoadScene("ChinaShanghai_culture");
+                SceneManager.LoadScene("ChinaShanghai_culture");    // 중국 상하이 "문화" 퀴즈 맵으로 이동 ->
             }
-            else if (gameObject.name == "telCS_food")
+            else if (gameObject.name == "telCS_food")               // 중국 상하이 "음식" 게임오브젝트에 부딪친다면
             {
-                SceneManager.LoadScene("ChinaShanghai_food");
+                SceneManager.LoadScene("ChinaShanghai_food");       // 중국 상하이 "음식" 퀴즈 맵으로 이동 ->
             }
-            else if (gameObject.name == "telCS_traffic")
+            else if (gameObject.name == "telCS_traffic")            // 중국 상하이 "교툥수단" 게임 오브젝트에 부딪친다면
             {
-                SceneManager.LoadScene("ChinaShanghai_traffic");
+                SceneManager.LoadScene("ChinaShanghai_traffic");    // 중국 상하이 "교통수단" 퀴즈 맵으로 이동 ->
             }
 
             // 베트남 다낭 이동
-            else if (gameObject.name == "telVD_landmark")
+            else if (gameObject.name == "telVD_landmark")           // 베트남 다낭 "랜드마크" 게임오브젝트에 부딪친다면
             {
-                SceneManager.LoadScene("VietnamDanang_landmark");
+                SceneManager.LoadScene("VietnamDanang_landmark");   // 베트남 다낭 "랜드마크" 퀴즈 맵으로 이동 ->
             }
-            else if (gameObject.name == "telVD_culture")
+            else if (gameObject.name == "telVD_culture")            // 베트남 다낭 "문화" 게임오브젝트에 부딪친다면
             {
-                SceneManager.LoadScene("VietnamDanang_culture");
+                SceneManager.LoadScene("VietnamDanang_culture");    // 베트남 다낭 "문화" 퀴즈 맵으로 이동 ->
             }
-            else if (gameObject.name == "telVD_food")
+            else if (gameObject.name == "telVD_food")               // 베트남 다낭 "음식" 게임오브젝트에 부딪친다면
             {
-                SceneManager.LoadScene("VietnamDanang_food");
+                SceneManager.LoadScene("VietnamDanang_food");       // 베트남 다낭 "음식" 퀴즈 맵으로 이동 ->
             }
-            else if (gameObject.name == "telVD_traffic")
+            else if (gameObject.name == "telVD_traffic")            // 베트남 다낭 "교통수단" 게임오브젝트에 부딪친다면
             {
-                SceneManager.LoadScene("VietnamDanang_traffic");
+                SceneManager.LoadScene("VietnamDanang_traffic");    // 베트남 다낭 "교통수단" 퀴즈 맵으로 이동 ->
             }
             else
             {
-                return;
+                return;                                             // 이외 값은 이동하지 않는다.
             }
             
         }
