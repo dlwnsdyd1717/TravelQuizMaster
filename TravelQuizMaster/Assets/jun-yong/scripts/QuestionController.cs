@@ -52,7 +52,7 @@ public class QuestionController : MonoBehaviour
             uiManager.quizText.gameObject.SetActive(false);
             uiManager.answerTexts.gameObject.SetActive(true);
             uiManager.answerTexts.text = "-GAME OVER-";
-            Invoke("QuizEnd", 1.5f);  // 퀴즈 종료 함수 호출
+            Invoke("QuizEnd", 2f);  // 퀴즈 종료 함수 호출
             return;
         }
         if (currentQuestionIndex < selectedQuizzes.Count) // 1라운드부터 10라운드까지 진행하면서 비교
@@ -62,7 +62,11 @@ public class QuestionController : MonoBehaviour
         }
         else
         {
-            QuizEnd();  // 3초 후 퀴즈 종료 함수 호출
+            uiManager.timerText.gameObject.SetActive(false);
+            uiManager.quizText.gameObject.SetActive(false);
+            uiManager.answerTexts.gameObject.SetActive(true);
+            uiManager.answerTexts.text = "☆GAME CLEAR-☆";
+            Invoke("QuizEnd", 2f);      // 2초 후 퀴즈 종료 함수 호출
         }
     }
     // 퀴즈 종료
